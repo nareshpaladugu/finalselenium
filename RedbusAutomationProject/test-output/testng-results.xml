@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="2" failed="0" total="2" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="21774" started-at="2016-05-26T16:43:12Z" finished-at="2016-05-26T16:43:34Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="21774" started-at="2016-05-26T16:43:12Z" finished-at="2016-05-26T16:43:34Z">
+      <class name="com.redbus.testScripts.REDBUS001SearchForBuses">
+        <test-method status="SKIP" signature="testScriptSetup(java.lang.reflect.Method)[pri:0, instance:com.redbus.testScripts.REDBUS001SearchForBuses@773e467]" name="testScriptSetup" is-config="true" duration-ms="0" started-at="2016-05-26T22:13:34Z" finished-at="2016-05-26T22:13:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testScriptSetup -->
+        <test-method status="SKIP" signature="verifySearchBuses()[pri:0, instance:com.redbus.testScripts.REDBUS001SearchForBuses@773e467]" name="verifySearchBuses" duration-ms="4" started-at="2016-05-26T22:13:34Z" finished-at="2016-05-26T22:13:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchBuses -->
+        <test-method status="SKIP" signature="shutDown(org.testng.ITestResult)[pri:0, instance:com.redbus.testScripts.REDBUS001SearchForBuses@773e467]" name="shutDown" is-config="true" duration-ms="0" started-at="2016-05-26T22:13:34Z" finished-at="2016-05-26T22:13:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shutDown -->
+      </class> <!-- com.redbus.testScripts.REDBUS001SearchForBuses -->
+      <class name="com.redbus.testScripts.REDBUS002SelectSeatAndPickupLocation">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:com.redbus.testScripts.REDBUS002SelectSeatAndPickupLocation@3721bae0]" name="startUp" is-config="true" duration-ms="396" started-at="2016-05-26T22:13:12Z" finished-at="2016-05-26T22:13:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method status="PASS" signature="testScriptSetup(java.lang.reflect.Method)[pri:0, instance:com.redbus.testScripts.REDBUS002SelectSeatAndPickupLocation@3721bae0]" name="testScriptSetup" is-config="true" duration-ms="21477" started-at="2016-05-26T22:13:13Z" finished-at="2016-05-26T22:13:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.redbus.testScripts.REDBUS002SelectSeatAndPickupLocation.BookATicket() throws com.redbus.utilities.TestFailedException,java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testScriptSetup -->
+        <test-method status="FAIL" signature="initilizations()[pri:0, instance:com.redbus.testScripts.REDBUS002SelectSeatAndPickupLocation@3721bae0]" name="initilizations" is-config="true" duration-ms="0" started-at="2016-05-26T22:13:34Z" finished-at="2016-05-26T22:13:34Z">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[D:\RedbusAutomationProject\RedbusAutomationProject\src\main\java\com\redbus\testData\PATH (The system cannot find the file specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: D:\RedbusAutomationProject\RedbusAutomationProject\src\main\java\com\redbus\testData\PATH (The system cannot find the file specified)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:146)
+	at java.io.FileInputStream.<init>(FileInputStream.java:101)
+	at com.redbus.datadriven.ReadExcelFile.loadExcel(ReadExcelFile.java:17)
+	at com.redbus.testScripts.REDBUS002SelectSeatAndPickupLocation.initilizations(REDBUS002SelectSeatAndPickupLocation.java:22)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:216)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:590)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:823)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:778)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
+	at org.testng.TestNG.runSuites(TestNG.java:1075)
+	at org.testng.TestNG.run(TestNG.java:1047)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initilizations -->
+        <test-method status="SKIP" signature="BookATicket()[pri:0, instance:com.redbus.testScripts.REDBUS002SelectSeatAndPickupLocation@3721bae0]" name="BookATicket" duration-ms="18" started-at="2016-05-26T22:13:34Z" finished-at="2016-05-26T22:13:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BookATicket -->
+        <test-method status="SKIP" signature="shutDown(org.testng.ITestResult)[pri:0, instance:com.redbus.testScripts.REDBUS002SelectSeatAndPickupLocation@3721bae0]" name="shutDown" is-config="true" duration-ms="0" started-at="2016-05-26T22:13:34Z" finished-at="2016-05-26T22:13:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shutDown -->
+        <test-method status="SKIP" signature="endExecution()[pri:0, instance:com.redbus.testScripts.REDBUS002SelectSeatAndPickupLocation@3721bae0]" name="endExecution" is-config="true" duration-ms="0" started-at="2016-05-26T22:13:34Z" finished-at="2016-05-26T22:13:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endExecution -->
+      </class> <!-- com.redbus.testScripts.REDBUS002SelectSeatAndPickupLocation -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
